@@ -26,6 +26,14 @@ $.prototype.wrt = function (para) {
     ans.innerHTML = para;
 }
 
+$.prototype.m_enter = function (para) {
+    ans.addEventListener('mouseenter', para)
+}
+
+$.prototype.m_out = function (para) {
+    ans.addEventListener('mouseout', para)
+}
+
 $.prototype.hide = function () {
     ans.style.display = "none";
 }
