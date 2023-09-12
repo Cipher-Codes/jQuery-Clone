@@ -14,7 +14,9 @@
 <script src="./index.js"></script>
 <script>
     new $('button').m_enter(() => {
-        new $('#k').toggle()
+        new $('button').m_move(() => {
+            new $('#k').toggle()
+        })
     })
     new $('button').m_out(() => {
         new $('#k').toggle()

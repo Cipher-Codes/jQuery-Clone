@@ -22,6 +22,10 @@ $.prototype.clk = function (para) {
     ans = ans.addEventListener('click', para);
 }
 
+$.prototype.dclk = function (para) {
+    ans.addEventListener('dblclick', para)
+}
+
 $.prototype.wrt = function (para) {
     ans.innerHTML = para;
 }
@@ -32,6 +36,10 @@ $.prototype.m_enter = function (para) {
 
 $.prototype.m_out = function (para) {
     ans.addEventListener('mouseout', para)
+}
+
+$.prototype.m_move = function (para) {
+    ans.addEventListener('mousemove', para)
 }
 
 $.prototype.hide = function () {
